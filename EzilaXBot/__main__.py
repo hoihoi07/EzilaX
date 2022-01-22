@@ -76,16 +76,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-🌺Hey there! My name is [Ezila]("https://telegra.ph/file/0316ea3d18fcd52a03194.jpg").
+🌺Hey there! My name is [Kiara]("https://telegra.ph/file/8d7e684619ac8113f9998.png").
 
 I can help manage your groups with useful features, feel free to add me to your groups!
-Project By @Ezila_Updates ❤
+Project By @jetbots ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ Add EzilaX to your Group ➕", url="t.me/EzilaXROBot?startgroup=true"),
+            text="➕ Add Kiarax to your Group ➕", url="t.me/Kiara_xbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Source Code 🗒️", callback_data="source_"),
@@ -94,9 +94,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🙋‍♀️ Ezila News", url=f"https://t.me/Ezila_Updates"),
+        InlineKeyboardButton(text="🙋‍♀️ Kiara News", url=f"https://t.me/jetbots"),
         InlineKeyboardButton(
-            text="💬 Support Group", url=f"https://t.me/Ezila_Support"
+            text="💬 Support Group", url=f"https://t.me/jetbots_support"
         ),
     ],
     [
@@ -108,13 +108,13 @@ buttons = [
 HELP_STRINGS = """
 Hi.. I'm EzilaX 
 Click On The Buttons Below To Get Documentation About Specific Modules..
-Powered by @Ezila_Updates 💓 [️️ ️](https://telegra.ph/file/0316ea3d18fcd52a03194.jpg) """
+Powered by @jetbots 💓 [️️ ️](https://telegra.ph/file/7b0dc215cee89f3da1adb.jpg) """
 
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Theekshana Official](t.me/theekshana_official) \
- Supporting isnt always financial! [Theekshana Support](t.me/Theekshana_support) \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+ You can support the project Of [Jetbots Updates](t.me/jetbots) \
+ Supporting isnt always financial! [Jetbots Support](t.me/jetbots_support) \
+ Those who want any private bot contact DEV- @jettastic ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -359,16 +359,16 @@ def sophia_about_callback(update, context):
     query = update.callback_query
     if query.data == "sophia_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *EzilaX*, a powerful group management bot built to help you manage your group easily.
+                text=""" ℹ️ I'm *Kiarax*, a powerful group management bot built to help you manage your group easily.
                  \n* I can restrict users.
                  \n* I can greet users with customizable welcome messages and even set a group's rules.
                  \n* I have an advanced anti-flood system.
                  \n* I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n* I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n* I check for admins' permissions before executing any command
-                 \n* Awesome Secret @Theekshana_Official
-                 \n* Support Group @Theekshana_Support
-                 \* Assistant @Ezila_Support
+                 \n* Awesome Secret @jetbots
+                 \n* Support Group @jetbots_support
+                 \* Other Bots https://t.me/jetbots/26
                  \n\nIf you have any question about EzilaX, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -400,8 +400,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😍 I'm *EzilaX*
-                 \nHere is the [Source Code](https://github.com/imtheekshana126/EzilaX) .""",
+            text=""" Hi..😍 I'm *Kiarax*
+                 \nHere is the [Develeoper](https://t.me/jettastic) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -696,10 +696,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @Ezila_Updates")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm Online Now! My Updates @jetbots")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to @Ezila_Support, go and check!"
+                "Bot isnt able to send message to @jetbots_support, go and check!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)

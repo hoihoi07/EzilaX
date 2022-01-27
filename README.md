@@ -13,7 +13,7 @@
 
 # 2 Branches available. this is main brach. swith advaced fr all fetures
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ImTheekshana126/EzilaX)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/hoihoi07/EzilaX)
 
 ## New version Avaiilable on Telegram as [THEEKSHANA OFFICIAL](https://t.me/theekshana_official)
 ## Ezilax-Bot is the latest
